@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JS if .. else</h2>
+
+<p>A time-based Appointment:</p>
+
+<p id="TRIAL"></p>
+
+<script>
+const time = new Date().getHours();
+let Appointment;
+if (time < 10) {
+  Appointment = "appointment approved";
+} else if (time < 20) {
+  Appointment = "not working hours";
+} else {
+  Appointment = "come tomorrow";
+}
+document.getElementById("TRIAL").innerHTML = Appointment;
+</script>
+
+</body>
+</html>
